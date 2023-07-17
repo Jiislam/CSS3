@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .box{
+            margin:20px auto;
+            height: 100px;
+            width: 100px;
+            border-radius: 15px;
+            border: 2px solid tomato;
+            background-color: bisque;
+            /* transition: width 5s linear 3s, background-color 5s ease-in 2s; */
+            transition: transform 3s, border-radius 3s;
+        }
+        .box:hover{
+           transform: rotate(45deg) scale(1.5) translateX(150px);
+           border-radius: 50px;
+            /* width: 300px; */
+            background-color: rgb(92, 237, 7);
+           text-align: center;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Transform: Changing the shape</li>
+        <li>Translate: It is a value of the transform style rule, This helps moving on X or Y axis  </li>
+        <li>Transition: Time needed for changing the shape</li>
+    </ul>
+<div class="box">box-1</div>
+<div class="box">box-2</div>
+<div class="box">box-3</div>
+
+</body>
+</html>

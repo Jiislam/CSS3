@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left:50px
+        }
+        .container, .inner{
+           
+            height: 200px;
+            width: 200px;
+        }
+        .container{
+            background: rgb(228, 55, 55);
+            border: blueviolet 1px solid;
+        }
+        .inner{
+            background-color: rgb(101, 217, 24);
+            border: rgb(104, 109, 7) 1px solid;
+            /* transform: scale(.75,.5); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(.5) rotate(45deg) translateX(0px); */
+
+        }
+       .inner:hover{
+        transform: rotate(45deg) scale(.5) translateY(150px);
+       transition: 5s;}
+
+    </style>
+</head>
+<body>
+    <h1>explore transform and translate</h1>
+
+    <div class="container">
+        <div class="inner">inner-1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner-2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner-3</div>
+    </div>
+</body>
+</html>
